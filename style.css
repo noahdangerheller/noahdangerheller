@@ -1,0 +1,13 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.carousel-slide {
+    padding: 50px;
+}
+
+.table {
+    padding: 10px;
+    text-align: center;
+    
+}
