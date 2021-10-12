@@ -2,19 +2,19 @@
     background-color: gray;
 }
 
-body {
+/* body {
     font-family: 'Courier New', Courier, monospace;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 100px;
-}
+} */
 
 
-.table-striped {
+/* .table-striped {
     padding: 10px;
     text-align: center;
     width: 100%;
-}
+} */
 
 
 #linkColor {
@@ -24,4 +24,5 @@ body {
 .custom {
     padding: 30px;
     text-align: center;
+    color: magenta;
 }
