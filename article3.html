@@ -9,16 +9,61 @@ page that contains all the code you need for a new page.-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" type="text/css" charset="utf-8" />
   <title>OT CS Capstone</title>
 </head>
 <body>
-  <!--Navbar-->
-  <div data-include="nav"></div>
   <!--Whole page container div-->
   <div class="container">
-    <h4>place holder *peace sign*</h4>
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div id="popup"></div>
+    <script>
+      const body = document.getElementsByTagName("body")[0];
+      const popup = document.getElementById("popup");
 
+      function duplicatePopupAtRandomPosition() {
+        const popupClone = popup.cloneNode(true);
+        popupClone.style.display = "block";
+        popupClone.style.top = getRandomPercentage();
+        popupClone.style.left = getRandomPercentage();
+        popupClone.style.transform = `scale(${getRandomSize()})`;
+        body.appendChild(popupClone);
+      }
+
+      // Return 0% to 100%
+      function getRandomPercentage() {
+        return Math.random() * 101 + "%";
+      }
+
+      // Return 0.3 - 1
+      function getRandomSize() {
+        return Math.random() * 0.8 + 0.3;
+      }
+
+      // Duplicate popup every second yo
+      setInterval(function() {
+        duplicatePopupAtRandomPosition();
+      }, 1000);
+    </script>
 
   </div>
   <!--Bootstrap and other JS scripts-->
