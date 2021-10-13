@@ -1,9 +1,85 @@
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
+@font-face {
+  font-family: 'green_energyregular';
+  src: url('green_energy-webfont.woff2') format('woff2'),
+       url('green_energy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  font-family:'green_energyregular';
+  color: #95D600;
+  background-color: black;
+  z-index: 3;
+}
+
+head {
+  background-color: black;
+}
+
+a:link {
+  color:#95D600;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color:#95D600;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.homepage-img {
+  width: 100%;
+  margin: 0%;
+  overflow: hidden;
+}
+
+.static {
+  position: absolute;
+  width: fit-content;
+  height: max-content;
+  left: 0%;
+  z-index: 5;
+
+}
+
+
+.header {
+  font-size: 4.5em;
+  letter-spacing: -1px;
+  color: black;
+  text-shadow: 2px 0 8px #95D600;
+}
+
+#hideMeAfter5Seconds {
+  animation: hideAnimation 0s ease-in 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
   }
+}
+
+@keyframes showAnimation {
+  to {
+    visibility: visible;
+  }
+}
+
+#myModal {
+  border-radius: 0%;
+  animation: showAnimation 5s ease-out 0s forwards;
+}
+
+.btn {
+  background-color: black;
+  border-radius: 0%;
+  border-color: #95D600;
+  
+}
