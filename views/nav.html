@@ -1,3 +1,20 @@
+<script type="text/javascript">
+    function random_4(){
+        var myrandom=Math.round(Math.random()*3)
+        var link1="article1.html"
+        var link2="article2.html"
+        var link3="article3.html"
+        var link4="survey.html"
+        if (myrandom==0)
+            window.location=link1
+        else if (myrandom==1)
+            window.location=link2
+        else if (myrandom==2)
+            window.location=link3
+        else if (myrandom==3)
+            window.location=link4
+    }
+    </script>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container-fluid">
     <a class="navbar-brand" href="index.html">Capstone</a>
@@ -13,7 +30,7 @@
                 <a class="nav-link" href="survey.html">Survey</a>
             </li>
             <li class ="nav-item">
-                <a class="nav-link" href="">Random Page</a>
+                <a class="nav-link" onClick="random_4()" text-dectoration="underline">Random Page</a>
             </li>
         </ul>
     </div>
