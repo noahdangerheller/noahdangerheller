@@ -1,8 +1,40 @@
 <footer class="footer text-center bg-dark footer-dark footer-expand-lg">
-    <form>
-        <div class="form-group">
-            <input type="email" class="form-control" placeholder="Email Address">
+    <div class=container>
+        <div class="row border border-0">
+            <div class=col-3>
+                <h4>donate here!</h4>
+                <h6>all donations go directly <br> to the owner of the site <br> both to maintain this and to <br> pay for monster energy</h6>
+            </div>
+            <div class=col-3>
+                <br>
+                <form>
+                    <input type="number" placeholder="amount to donate">
+                    <br><br>
+                    <input type="text" placeholder="credit card number">
+                </form>
+            </div>
+            <div class=col-3>
+                <br>
+                <form>
+                    <input type="text" placeholder="expiry">
+                    <br><br>
+                    <input type="number" placeholder="crv">
+                </form>
+            </div>
+            <div class=col-3>
+                <br>
+                <p>every 5 dollars donated gets one gay person hit with a watermelon!</p>
+            </div>
         </div>
-    </form>
-    <p>every 5 dollars donated gets one gay person hit with a watermelon</p>
+        <br>
+        <button onclick="donationMessage()">Submit</button>
+        <br>
+        <p>© 2021 noah danger heller </p>
+    </div>
+
+    <script>
+        function donationMessage(){
+          alert("thank you for your donation");
+        }
+    </script>
 </footer>

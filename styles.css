@@ -98,3 +98,8 @@ a:link {
     text-align: center;
     vertical-align: middle;
 }
+
+.footer {
+    margin-top: 40px;
+    background-color: 374E00;
+}
