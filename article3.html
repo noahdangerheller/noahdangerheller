@@ -9,22 +9,28 @@ page that contains all the code you need for a new page.-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <link rel="stylesheet" href="article3.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="styles.css" type="text/css" charset="utf-8" />
   <title>OT CS Capstone</title>
 </head>
 <body>
   <!--Whole page container div-->
   <div class="container">
-    
+  
 
   <script>
-    var sourceImage = document.createElement('img'),
-    imgContainer = document.getElementById("content");
-    sourceImage.src = "https://www.technipages.com/wp-content/uploads/2020/08/google-chrome-critical-error-red-screen-600x357.png";
-    imgContainer.appendChild(sourceImage);
+    spaceX = window.innerHeight;
+    spaceY = window.innerWidth;
+    imgUrl = "https://www.technipages.com/wp-content/uploads/2020/08/google-chrome-critical-error-red-screen-600x357.png";
+      
 
-    function cloneImg(){
-        imgContainer.appendChild(sourceImage.cloneNode(true));
+    for (i=1; i<50; i++){
+      vtop = Math.random() * spaceX;
+      vleft = Math.random() * spaceY;
+      imgNode = document.createElement('img');
+      imgNode.src = imgUrl;
+      imgNode.style = "position: absolute;  top: " + vtop + "px; left: " + vleft  + "px";
+      document.getElementsByTagName('body')[0].append(imgNode);
+
     }
   </script>
 

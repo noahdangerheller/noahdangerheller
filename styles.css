@@ -1,14 +1,23 @@
+
 @font-face {
     font-family: 'green_energyregular';
     src: url('green_energy-webfont.woff2') format('woff2'),
          url('green_energy-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    unicode-range: U+0030-0039, U+0041-005A, U+0061-007A; 
 
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+
+p {
+    font-size: large;
+}
+
 body {
-    font-family:'green_energyregular';
+    font-family: 'green_energyregular', 'Mukta', sans-serif;
     color: #95D600;
     background-color: black;
     z-index: 3;
@@ -73,4 +82,19 @@ a:link {
 .btn {
     background-color: black;
     border-radius: 0%;
+    size:absolute;
+}
+
+.btn:hover {
+    background-color:#95D600;
+    border: #95D600;
+}
+
+.monster {
+    max-height: 3in;
+}
+
+.centered {
+    text-align: center;
+    vertical-align: middle;
 }
